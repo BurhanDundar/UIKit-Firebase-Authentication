@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var txtEmail: UITextField!
     var txtPassword: UITextField!
@@ -143,7 +143,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc private func login(_ sender: UIButton){
-        print("login to system")
+        
+        let email: String = self.txtEmail.text!
+        let password: String = self.txtPassword.text!
+        let loginRequest = LoginUserRequest(
+            email: email,
+            passwod: password
+        )
+        
+        AuthService.shared.signIn(with: loginRequest) { error in
+            if let error = error {
+                print("error",error)
+                return
+            } else {
+                let homeVC = HomeViewController()
+                self.navigationController?.pushViewController(homeVC, animated: true)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

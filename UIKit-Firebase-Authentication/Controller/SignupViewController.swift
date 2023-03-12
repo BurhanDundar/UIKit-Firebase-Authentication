@@ -143,7 +143,35 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc private func signUp(_ sender: UIButton){
-        print("sign up to system")
+        let email: String = self._txtEmail.text!
+        let password: String = self._txtPassword.text!
+        let registerUserRequest = RegisterUserRequest(
+                   email: self._txtEmail.text ?? "",
+                   password: self._txtPassword.text ?? ""
+               )
+        
+        
+        AuthService.shared.registerUser(with: registerUserRequest) { [weak self] wasRegistered, error in
+                    guard let self = self else { return }
+                    
+                    if let error = error {
+                        //AlertManager.showRegistrationErrorAlert(on: self, with: error)
+                        print("error")
+                        return
+                    }
+                    
+                    if wasRegistered {
+                        let homeVC = HomeViewController()
+                        self.navigationController?.pushViewController(homeVC, animated: true)
+                        //if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+                            //sceneDelegate.checkAuthentication()
+                            //print("scene delegate")
+                        //}
+                    } else {
+                        //AlertManager.showRegistrationErrorAlert(on: self)
+                        print("error", error)
+                    }
+                }
     }
     
     override func didReceiveMemoryWarning() {

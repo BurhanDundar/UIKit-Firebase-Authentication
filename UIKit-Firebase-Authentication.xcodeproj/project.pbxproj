@@ -3,20 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B611A7E590F31AC2BE92B31 /* Pods_UIKit_Firebase_Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5212F0791D41A049AA2E390F /* Pods_UIKit_Firebase_Authentication.framework */; };
 		DBAB630A29BBDFE800CC451D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB630929BBDFE800CC451D /* AppDelegate.swift */; };
 		DBAB630C29BBDFE800CC451D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB630B29BBDFE800CC451D /* SceneDelegate.swift */; };
-		DBAB630E29BBDFE800CC451D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB630D29BBDFE800CC451D /* ViewController.swift */; };
-		DBAB631129BBDFE800CC451D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAB630F29BBDFE800CC451D /* Main.storyboard */; };
+		DBAB630E29BBDFE800CC451D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB630D29BBDFE800CC451D /* LoginViewController.swift */; };
 		DBAB631329BBDFEA00CC451D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAB631229BBDFEA00CC451D /* Assets.xcassets */; };
 		DBAB631629BBDFEA00CC451D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAB631429BBDFEA00CC451D /* LaunchScreen.storyboard */; };
 		DBAB632129BBDFEB00CC451D /* UIKit_Firebase_AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB632029BBDFEB00CC451D /* UIKit_Firebase_AuthenticationTests.swift */; };
 		DBAB632B29BBDFEB00CC451D /* UIKit_Firebase_AuthenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB632A29BBDFEB00CC451D /* UIKit_Firebase_AuthenticationUITests.swift */; };
 		DBAB632D29BBDFEB00CC451D /* UIKit_Firebase_AuthenticationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB632C29BBDFEB00CC451D /* UIKit_Firebase_AuthenticationUITestsLaunchTests.swift */; };
 		DBAB633A29BCE10900CC451D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB633929BCE10900CC451D /* SignupViewController.swift */; };
+		DBAB633C29BDF92600CC451D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBAB633B29BDF92500CC451D /* GoogleService-Info.plist */; };
+		DBAB633E29BDFF6E00CC451D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB633D29BDFF6E00CC451D /* AuthService.swift */; };
+		DBAB634029BE006C00CC451D /* RegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB633F29BE006C00CC451D /* RegisterUserRequest.swift */; };
+		DBAB634229BE05CF00CC451D /* LoginUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB634129BE05CF00CC451D /* LoginUserRequest.swift */; };
+		DBAB634429BE0EF700CC451D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB634329BE0EF600CC451D /* HomeViewController.swift */; };
+		DBAB634929BE295700CC451D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAB634829BE295700CC451D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3256F0327DD556E53847564E /* Pods-UIKit-Firebase-Authentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-Firebase-Authentication.release.xcconfig"; path = "Target Support Files/Pods-UIKit-Firebase-Authentication/Pods-UIKit-Firebase-Authentication.release.xcconfig"; sourceTree = "<group>"; };
+		5212F0791D41A049AA2E390F /* Pods_UIKit_Firebase_Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKit_Firebase_Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD963E77AFECB6897342284 /* Pods-UIKit-Firebase-Authentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-Firebase-Authentication.debug.xcconfig"; path = "Target Support Files/Pods-UIKit-Firebase-Authentication/Pods-UIKit-Firebase-Authentication.debug.xcconfig"; sourceTree = "<group>"; };
 		DBAB630629BBDFE800CC451D /* UIKit-Firebase-Authentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit-Firebase-Authentication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAB630929BBDFE800CC451D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAB630B29BBDFE800CC451D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBAB630D29BBDFE800CC451D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DBAB631029BBDFE800CC451D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBAB630D29BBDFE800CC451D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBAB631229BBDFEA00CC451D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBAB631529BBDFEA00CC451D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBAB631729BBDFEA00CC451D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		DBAB632A29BBDFEB00CC451D /* UIKit_Firebase_AuthenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit_Firebase_AuthenticationUITests.swift; sourceTree = "<group>"; };
 		DBAB632C29BBDFEB00CC451D /* UIKit_Firebase_AuthenticationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit_Firebase_AuthenticationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DBAB633929BCE10900CC451D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DBAB633B29BDF92500CC451D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBAB633D29BDFF6E00CC451D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DBAB633F29BE006C00CC451D /* RegisterUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRequest.swift; sourceTree = "<group>"; };
+		DBAB634129BE05CF00CC451D /* LoginUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRequest.swift; sourceTree = "<group>"; };
+		DBAB634329BE0EF600CC451D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DBAB634829BE295700CC451D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B611A7E590F31AC2BE92B31 /* Pods_UIKit_Firebase_Authentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8882A621BEAF417F9B4F866E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CD963E77AFECB6897342284 /* Pods-UIKit-Firebase-Authentication.debug.xcconfig */,
+				3256F0327DD556E53847564E /* Pods-UIKit-Firebase-Authentication.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DBAB62FD29BBDFE800CC451D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,8 @@
 				DBAB631F29BBDFEB00CC451D /* UIKit-Firebase-AuthenticationTests */,
 				DBAB632929BBDFEB00CC451D /* UIKit-Firebase-AuthenticationUITests */,
 				DBAB630729BBDFE800CC451D /* Products */,
+				8882A621BEAF417F9B4F866E /* Pods */,
+				EA04B2278F46F65587AE7303 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +129,11 @@
 			children = (
 				DBAB630929BBDFE800CC451D /* AppDelegate.swift */,
 				DBAB630B29BBDFE800CC451D /* SceneDelegate.swift */,
-				DBAB630D29BBDFE800CC451D /* ViewController.swift */,
-				DBAB633929BCE10900CC451D /* SignupViewController.swift */,
-				DBAB630F29BBDFE800CC451D /* Main.storyboard */,
+				DBAB634629BE0F3900CC451D /* Model */,
+				DBAB634529BE0F1F00CC451D /* Controller */,
+				DBAB634729BE0F5E00CC451D /* Service */,
+				DBAB633B29BDF92500CC451D /* GoogleService-Info.plist */,
+				DBAB634829BE295700CC451D /* Main.storyboard */,
 				DBAB631229BBDFEA00CC451D /* Assets.xcassets */,
 				DBAB631429BBDFEA00CC451D /* LaunchScreen.storyboard */,
 				DBAB631729BBDFEA00CC451D /* Info.plist */,
@@ -130,6 +158,41 @@
 			path = "UIKit-Firebase-AuthenticationUITests";
 			sourceTree = "<group>";
 		};
+		DBAB634529BE0F1F00CC451D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBAB634329BE0EF600CC451D /* HomeViewController.swift */,
+				DBAB633929BCE10900CC451D /* SignupViewController.swift */,
+				DBAB630D29BBDFE800CC451D /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBAB634629BE0F3900CC451D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBAB633F29BE006C00CC451D /* RegisterUserRequest.swift */,
+				DBAB634129BE05CF00CC451D /* LoginUserRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBAB634729BE0F5E00CC451D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DBAB633D29BDFF6E00CC451D /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EA04B2278F46F65587AE7303 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5212F0791D41A049AA2E390F /* Pods_UIKit_Firebase_Authentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBAB633029BBDFEB00CC451D /* Build configuration list for PBXNativeTarget "UIKit-Firebase-Authentication" */;
 			buildPhases = (
+				E435FA02013E551F467DEF7D /* [CP] Check Pods Manifest.lock */,
 				DBAB630229BBDFE800CC451D /* Sources */,
 				DBAB630329BBDFE800CC451D /* Frameworks */,
 				DBAB630429BBDFE800CC451D /* Resources */,
+				1463E839B20AAD9BECC1B234 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +275,7 @@
 				};
 			};
 			buildConfigurationList = DBAB630129BBDFE800CC451D /* Build configuration list for PBXProject "UIKit-Firebase-Authentication" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -235,8 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBAB631629BBDFEA00CC451D /* LaunchScreen.storyboard in Resources */,
+				DBAB633C29BDF92600CC451D /* GoogleService-Info.plist in Resources */,
 				DBAB631329BBDFEA00CC451D /* Assets.xcassets in Resources */,
-				DBAB631129BBDFE800CC451D /* Main.storyboard in Resources */,
+				DBAB634929BE295700CC451D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,13 +322,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1463E839B20AAD9BECC1B234 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKit-Firebase-Authentication/Pods-UIKit-Firebase-Authentication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKit-Firebase-Authentication/Pods-UIKit-Firebase-Authentication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIKit-Firebase-Authentication/Pods-UIKit-Firebase-Authentication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E435FA02013E551F467DEF7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKit-Firebase-Authentication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBAB630229BBDFE800CC451D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBAB630E29BBDFE800CC451D /* ViewController.swift in Sources */,
+				DBAB630E29BBDFE800CC451D /* LoginViewController.swift in Sources */,
 				DBAB630A29BBDFE800CC451D /* AppDelegate.swift in Sources */,
+				DBAB633E29BDFF6E00CC451D /* AuthService.swift in Sources */,
+				DBAB634429BE0EF700CC451D /* HomeViewController.swift in Sources */,
+				DBAB634029BE006C00CC451D /* RegisterUserRequest.swift in Sources */,
+				DBAB634229BE05CF00CC451D /* LoginUserRequest.swift in Sources */,
 				DBAB633A29BCE10900CC451D /* SignupViewController.swift in Sources */,
 				DBAB630C29BBDFE800CC451D /* SceneDelegate.swift in Sources */,
 			);
@@ -301,14 +413,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DBAB630F29BBDFE800CC451D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBAB631029BBDFE800CC451D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBAB631429BBDFEA00CC451D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +540,7 @@
 		};
 		DBAB633129BBDFEB00CC451D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD963E77AFECB6897342284 /* Pods-UIKit-Firebase-Authentication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,6 +548,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UIKit-Firebase-Authentication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UIKit Firebase Authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -463,6 +569,7 @@
 		};
 		DBAB633229BBDFEB00CC451D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3256F0327DD556E53847564E /* Pods-UIKit-Firebase-Authentication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,6 +577,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UIKit-Firebase-Authentication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UIKit Firebase Authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
