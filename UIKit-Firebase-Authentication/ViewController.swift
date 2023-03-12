@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var emailImageView: UIImageView!
     var passwordImageView: UIImageView!
     var eyeImageView: UIImageView!
+    var loginButton: UIButton!
     var signUpButton: UIButton!
     private var isPasswordHidden: Bool = true
     
@@ -71,6 +72,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         view.addSubview(txtPassword)
         
+        loginButton = UIButton()
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
+        loginButton.setTitle("Login", for: .normal)
+        loginButton.setTitleColor(.systemGreen, for: .normal)
+        loginButton.setTitleColor(.green, for: .highlighted)
+        
+        view.addSubview(loginButton)
+        
         signUpButton = UIButton()
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
         signUpButton.backgroundColor = .blue
@@ -94,9 +104,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             txtPassword.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
             txtPassword.heightAnchor.constraint(equalToConstant: 50),
             
+            // Login button
+            loginButton.topAnchor.constraint(equalTo: txtPassword.bottomAnchor, constant: 50),
+            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
             // Sign up button
             signUpButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
-            signUpButton.topAnchor.constraint(equalTo: txtPassword.bottomAnchor, constant: 50),
+            signUpButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 50),
             signUpButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
             signUpButton.heightAnchor.constraint(equalToConstant: 50)
             
@@ -124,9 +138,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc private func goToSignUpPage(_ sender: UIButton){
-        print("go to sign up page")
         let signupViewController = SignupViewController()
         navigationController?.pushViewController(signupViewController, animated: true)
+    }
+    
+    @objc private func login(_ sender: UIButton){
+        print("login to system")
     }
     
     override func didReceiveMemoryWarning() {

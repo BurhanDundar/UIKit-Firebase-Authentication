@@ -15,6 +15,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     var _passwordImageView: UIImageView!
     var _eyeImageView: UIImageView!
     var _loginButton: UIButton!
+    var _signUpButton: UIButton!
     private var isPasswordHidden: Bool = true
     
     override func viewDidLoad() {
@@ -72,6 +73,15 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         
         view.addSubview(_txtPassword)
         
+        _signUpButton = UIButton()
+        _signUpButton.translatesAutoresizingMaskIntoConstraints = false
+        _signUpButton.addTarget(self, action: #selector(signUp), for: .touchUpInside)
+        _signUpButton.setTitle("Sign Up", for: .normal)
+        _signUpButton.setTitleColor(.systemGreen, for: .normal)
+        _signUpButton.setTitleColor(.green, for: .highlighted)
+        
+        view.addSubview(_signUpButton)
+        
         _loginButton = UIButton()
         _loginButton.translatesAutoresizingMaskIntoConstraints = false
         _loginButton.backgroundColor = .blue
@@ -95,9 +105,13 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             _txtPassword.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
             _txtPassword.heightAnchor.constraint(equalToConstant: 50),
             
+            // Login button
+            _signUpButton.topAnchor.constraint(equalTo: _txtPassword.bottomAnchor, constant: 50),
+            _signUpButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
             // Sign up button
             _loginButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
-            _loginButton.topAnchor.constraint(equalTo: _txtPassword.bottomAnchor, constant: 50),
+            _loginButton.topAnchor.constraint(equalTo: _signUpButton.bottomAnchor, constant: 50),
             _loginButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
             _loginButton.heightAnchor.constraint(equalToConstant: 50)
             
@@ -125,9 +139,11 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc private func goToLoginPage(_ sender: UIButton){
-        print("go to sign in")
-        let viewController = ViewController()
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @objc private func signUp(_ sender: UIButton){
+        print("sign up to system")
     }
     
     override func didReceiveMemoryWarning() {
